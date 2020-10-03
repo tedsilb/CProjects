@@ -1,2 +1,2 @@
 # CProjects
-Various C/C++ Projects - Ted Silbernagel
+Various C/C++ projects I work on from time to time.
