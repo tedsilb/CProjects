@@ -31,5 +31,8 @@
 *.out
 *.app
 
+# Bazel
+bazel-*
+
 # macOS
 .DS_Store
