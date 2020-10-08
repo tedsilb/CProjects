@@ -1,6 +1,7 @@
 #include <cstdlib>
 #include <iostream>
 
+// Generate the nth term in the Fibonacci sequence.
 long double FibonacciGen(int n_term) {
   if (n_term < 0) {
     return -1;
