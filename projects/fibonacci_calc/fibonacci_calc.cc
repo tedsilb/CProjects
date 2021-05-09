@@ -1,8 +1,7 @@
-#include <cstdlib>
-#include <iostream>
+#include "fibonacci_calc.h"
 
 // Generate the nth term in the Fibonacci sequence.
-long double FibonacciGen(int n_term) {
+long double FibonacciCalc::FibonacciGen(int n_term) {
   if (n_term < 0) {
     return -1;
   }
@@ -21,20 +20,4 @@ long double FibonacciGen(int n_term) {
   }
 
   return current;
-}
-
-int main(int argc, char* argv[]) {
-  if (argc < 2) {
-    return 2;
-  }
-
-  int user_no = atoi(argv[1]);
-
-  long double fib_no = FibonacciGen(user_no);
-  if (fib_no == -1) {
-    return 1;
-  }
-
-  std::cout << fib_no << std::endl;
-  return 0;
 }
