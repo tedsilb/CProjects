@@ -1,23 +1,26 @@
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
-RULES_CC_COMMIT = "daf6ace7cfeacd6a83e9ff2ed659f416537b6c74"
+RULES_PYTHON_VERSION = "0.6.0"
 
-RULES_CC_SHA = "34b2ebd4f4289ebbc27c7a0d854dcd510160109bb0194c0ba331c9656ffcb556"
+RULES_CC_COMMIT = "081771d4a0e9d7d3aa0eed2ef389fa4700dfb23e"
 
-ABSL_COMMIT = "33541e751039a8c4bd3a395dd1a3a0928885814a"
+RULES_CC_SHA = "ff7876d80cd3f6b8c7a064bd9aa42a78e02096544cca2b22a9cf390a4397a53e"
 
-ABSL_SHA = "2af5b1a55343d348c96c3b9c9d9a57a247ade86141a9a5f752779ea9abe15af4"
+ABSL_COMMIT = "5e4ea1ce097f3571e7d87af33b6b30d11b3a211e"
 
-GOOGLETEST_COMMIT = "8d51ffdfab10b3fba636ae69bc03da4b54f8c235"
+ABSL_SHA = "3943578b8cb4a356717ee1e9069f367e149e07792fbd6e2910415c55204eff30"
 
-GOOGLETEST_SHA = "12ef65654dc01ab40f6f33f9d02c04f2097d2cd9fbe48dc6001b29543583b0ad"
+GOOGLETEST_COMMIT = "c9461a9b55ba954df0489bab6420eb297bed846b"
+
+GOOGLETEST_SHA = "1cff5915c9dfbf8241d811e95230833c4f34a6d56b7b8c960f4c828f60429a38"
 
 # This isn't used, but for some reason the build fails if this isn't loaded
 
 http_archive(
     name = "rules_python",
-    sha256 = "934c9ceb552e84577b0faf1e5a2f0450314985b4d8712b2b70717dc679fdc01b",
-    url = "https://github.com/bazelbuild/rules_python/releases/download/0.3.0/rules_python-0.3.0.tar.gz",
+    sha256 = "a30abdfc7126d497a7698c29c46ea9901c6392d6ed315171a6df5ce433aa4502",
+    strip_prefix = "rules_python-%s" % RULES_PYTHON_VERSION,
+    url = "https://github.com/bazelbuild/rules_python/archive/%s.tar.gz" % RULES_PYTHON_VERSION,
 )
 
 http_archive(
