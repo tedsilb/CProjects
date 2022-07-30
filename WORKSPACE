@@ -1,8 +1,8 @@
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
-RULES_CC_COMMIT = "8bb0eb5c5ccd96b91753bb112096bb6993d16d13"
+RULES_CC_COMMIT = "2f8c04c04462ab83c545ab14c0da68c3b4c96191"
 
-RULES_CC_SHA = "19d93d9a54487343dec4fabccf9974a9a5e8749297a448d1f310459eeca5091e"
+RULES_CC_SHA = "4aeb102efbcfad509857d7cb9c5456731e8ce566bfbf2960286a2ec236796cc3"
 
 ABSL_COMMIT = "5e4ea1ce097f3571e7d87af33b6b30d11b3a211e"
 
@@ -16,9 +16,9 @@ GOOGLETEST_SHA = "df6cad4bf17df72d8d86306628701c01a45b9e001c7f2a3b28971c7e24b103
 
 http_archive(
     name = "rules_python",
-    sha256 = "cdf6b84084aad8f10bf20b46b77cb48d83c319ebe6458a18e9d2cebf57807cdd",
-    strip_prefix = "rules_python-0.8.1",
-    url = "https://github.com/bazelbuild/rules_python/archive/refs/tags/0.8.1.tar.gz",
+    sha256 = "a3a6e99f497be089f81ec082882e40246bfd435f52f4e82f37e89449b04573f6",
+    strip_prefix = "rules_python-0.10.2",
+    url = "https://github.com/bazelbuild/rules_python/archive/refs/tags/0.10.2.tar.gz",
 )
 
 http_archive(
