@@ -1,8 +1,8 @@
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
-RULES_CC_COMMIT = "2f8c04c04462ab83c545ab14c0da68c3b4c96191"
+RULES_CC_COMMIT = "8e2588f2e4b1791619862ceb64ecf4ccb2ea564a"
 
-RULES_CC_SHA = "4aeb102efbcfad509857d7cb9c5456731e8ce566bfbf2960286a2ec236796cc3"
+RULES_CC_SHA = "a0b09cd9dbd6efffd903240a1ee6d15c891a40624f6942b51fe30f8963d4b636"
 
 ABSL_COMMIT = "5e4ea1ce097f3571e7d87af33b6b30d11b3a211e"
 
@@ -11,15 +11,6 @@ ABSL_SHA = "3943578b8cb4a356717ee1e9069f367e149e07792fbd6e2910415c55204eff30"
 GOOGLETEST_COMMIT = "0320f517fd920866d918e564105d68fd4362040a"
 
 GOOGLETEST_SHA = "df6cad4bf17df72d8d86306628701c01a45b9e001c7f2a3b28971c7e24b1035b"
-
-# This isn't used, but for some reason the build fails if this isn't loaded
-
-http_archive(
-    name = "rules_python",
-    sha256 = "a3a6e99f497be089f81ec082882e40246bfd435f52f4e82f37e89449b04573f6",
-    strip_prefix = "rules_python-0.10.2",
-    url = "https://github.com/bazelbuild/rules_python/archive/refs/tags/0.10.2.tar.gz",
-)
 
 http_archive(
     name = "rules_cc",
